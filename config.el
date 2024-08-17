@@ -30,7 +30,7 @@
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 
 ;; Hack字体
-(setq doom-font (font-spec :family "Hack NFM" :size 20))
+(setq doom-font (font-spec :family "Hack NFM" :size 28))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -41,10 +41,16 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+;; ================================ org start here ===============================
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/DEPEI/Repos/org/")
 
+;; roam
+(setq org-roam-directory "~/DEPEI/Repos/org/")
+
+;; ================================= org end here ================================
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
